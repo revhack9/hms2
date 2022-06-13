@@ -12,6 +12,12 @@ import AddPatient from "./pages/AddPatient";
 import ReceptionistLogin from "./containers/ReceptionistLogin";
 import ReceptionistDashboard from "./containers/ReceptionistDashboard";
 import DoctorDashboard from "./containers/DoctorDashboard";
+import PatientList from './pages/prescription/PatientList';
+import BookAppointment from './pages/BookAppointment';
+import Appointments from './pages/Appointments';
+import ViewPatients from './pages/ViewPatient';
+import UpdatePatients from './pages/UpdatePatient';
+
 
 
 const App = () => {
@@ -27,6 +33,12 @@ const App = () => {
 						<Route path="/receptionistLogin"element={<ReceptionistLogin/>}/>
 						<Route path="/addPatients"element={<AddPatient/>}/>
 						<Route path="/receptionistDashboard" element={<ReceptionistDashboard />}/>
+						<Route path="/patientlist" element={<PatientList />}/>
+						<Route path="/bookAppointment" element={<BookAppointment />}/>
+						<Route path="/appointments" element={<Appointments/>}/>
+						<Route path="/viewPatients" element={<ViewPatients/>}/>
+						<Route path="/updatePatients/:id" element={<UpdatePatients/>}/>
+			
 					</Routes>
 				</div>
 			</Router>

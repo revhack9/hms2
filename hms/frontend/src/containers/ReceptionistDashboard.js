@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import logo from "../assets/imgs/add-group.png";
 import logo2 from "../assets/imgs/appointment 2.png";
 import logo3 from "../assets/imgs/medicalReport3.png";
+import logo4 from "../assets/imgs/medicalReport1.png"
 
 
 
@@ -34,8 +35,8 @@ function ReceptionistDashboard() {
                                  flexWrap: 'wrap',
                                  '& > :not(style)': {
                                   m: 1,
-                                  width: 300,
-                                  height: 360,
+                                  width: 240,
+                                  height: 300,
                                 },
                             }}
 
@@ -61,8 +62,32 @@ function ReceptionistDashboard() {
                                  flexWrap: 'wrap',
                                  '& > :not(style)': {
                                   m: 1,
-                                  width: 300,
-                                  height: 360,
+                                  width: 240,
+                                  height: 300,
+                                },
+                            }}
+                        >
+                            <Button className="receptionistButton "variant="secondary"  
+                                    onClick={() => {
+						            window.location.href = "/viewPatients";
+					                }}>
+                                <img class="recLogo" src={logo4} alt={"View Patients"} />
+                                <h5 className="buttonText">
+                                    View Patients
+                                </h5>
+                            </Button>
+                       
+                            </Box>
+                        </Col>
+                        <Col>
+                        <Box
+                             sx={{
+                                 display: 'flex',
+                                 flexWrap: 'wrap',
+                                 '& > :not(style)': {
+                                  m: 1,
+                                  width: 240,
+                                  height: 300,
                                 },
                             }}
                         >
@@ -85,8 +110,8 @@ function ReceptionistDashboard() {
                                  flexWrap: 'wrap',
                                  '& > :not(style)': {
                                   m: 1,
-                                  width: 300,
-                                  height: 360,
+                                  width: 240,
+                                  height: 300,
                                 },
                             }}
                         >

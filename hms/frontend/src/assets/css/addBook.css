@@ -3,6 +3,14 @@
     background-color: #9a9a9a;
     background-size: cover;
   }
+
+  .small-container{
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+ 
+ 
   
   /* Layout */
   
@@ -37,6 +45,7 @@
   Buttons */
   .backBtn{
     margin-left: 10px;
+    
   }
   /* Headers */
   .receptionistHeader{
@@ -254,9 +263,9 @@
     color: #ababab;
   }
   
-  .striped-table tbody tr:nth-child(odd) {
+  /* .striped-table tbody tr:nth-child(odd) {
     background-color: #f8f8f8;
-  }
+  } */
   
   .contain-table {
     overflow-x: auto;
